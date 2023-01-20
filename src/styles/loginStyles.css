@@ -1,0 +1,67 @@
+
+.panel-back{
+    -fx-background-color: #141318;
+
+}
+
+.panel-form{
+    width: 420;     
+    height: 440;
+    -fx-background-color: #222428;
+    -fx-min-width: width;
+    -fx-max-width: width;
+    -fx-min-height: height;
+    -fx-max-height: height;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.btn-minimize{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+
+.btn-maximize{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+
+.btn-close{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+
+.btn-login{
+    -fx-background-color: #7baa5c;
+}
+
+.btn-close:hover{
+    -fx-background-color: #d31b0d;
+}
+
+.btn-minimize:hover{
+    -fx-text-fill: #7baa5c;
+    -fx-background-color: #222428;
+}
+
+.btn-maximize:hover{
+    -fx-text-fill: #7baa5c;
+    -fx-background-color: #222428;
+}
+
+.btn-close:pressed{
+    -fx-translate-y: -2px;
+}
+
+.btn-minimize:pressed{
+    -fx-translate-y: -2px;
+}
+
+.btn-maximize:pressed{
+    -fx-translate-y: -2px;
+}
+
+.btn-login:pressed{
+    -fx-translate-y: -2px;
+}

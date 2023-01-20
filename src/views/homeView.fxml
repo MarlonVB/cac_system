@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="918.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <left>
+      <VBox fx:id="sidebar" alignment="TOP_CENTER" prefHeight="574.0" prefWidth="245.0" spacing="10.0" styleClass="sidebar" stylesheets="@../styles/homeStyles.css">
+         <children>
+            <ImageView fitHeight="71.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/3845819.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="Vault" textFill="WHITE">
+               <font>
+                  <Font name="Dubai Bold" size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="-20.0" />
+               </VBox.margin>
+            </Label>
+            <Label alignment="CENTER" prefHeight="46.0" prefWidth="225.0" styleClass="labelOptions" text="Home">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin></Label>
+            <Accordion fx:id="sidebarOptions" prefWidth="150.0" styleClass="sidebarOptions" visible="true">
+               <panes>
+                  <TitledPane alignment="CENTER" styleClass="sidebarOptions" stylesheets="@../styles/homeStyles.css" text="Socios" textAlignment="CENTER">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <content>
+                        <Label alignment="CENTER" prefHeight="42.0" prefWidth="225.0" styleClass="labelOptions" text="Mis socios">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </content>
+                  </TitledPane>
+                  <TitledPane alignment="CENTER" styleClass="sidebarOptions" text="Reunion">
+                     <content>
+                        <Pane prefHeight="126.0" prefWidth="223.0" styleClass="panelOptios">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="225.0" styleClass="labelOptions" text="Iniciar reunion" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutY="82.0" prefHeight="42.0" prefWidth="225.0" styleClass="labelOptions" text="Asistencias" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutY="42.0" prefHeight="42.0" prefWidth="225.0" styleClass="labelOptions" text="Actas" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </content>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane alignment="CENTER" styleClass="sidebarOptions" text="Transaccion">
+                     <content>
+                        <Pane prefHeight="82.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" layoutY="-2.0" prefHeight="42.0" prefWidth="225.0" styleClass="labelOptions" text="Registrar transaccion">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label alignment="CENTER" layoutY="40.0" prefHeight="42.0" prefWidth="225.0" styleClass="labelOptions" text="Creditos">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </content>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane alignment="CENTER" animated="false" styleClass="sidebarOptions" text="Multas">
+                     <content>
+                        <Label alignment="CENTER" prefHeight="42.0" prefWidth="225.0" styleClass="labelOptions" text="Cobrar multa">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                     </content>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TitledPane>
+                  <TitledPane alignment="CENTER" animated="false" styleClass="sidebarOptions" text="Usuario">
+                     <content>
+                        <Pane prefHeight="84.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" layoutY="1.0" prefHeight="42.0" prefWidth="225.0" styleClass="labelOptions" text="Mis usuarios">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label alignment="CENTER" layoutY="43.0" prefHeight="42.0" prefWidth="225.0" styleClass="labelOptions" text="Roles de sesion">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </content>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TitledPane>
+               </panes>
+            </Accordion>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </left>
+   <center>
+      <Label text="Contenido principal" />
+   </center>
+</BorderPane>

@@ -1,0 +1,33 @@
+.sidebar{
+    -fx-background-color: #222428;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    
+}
+
+.sidebarOptions > .title {  
+    -fx-background-color: #222428;
+    -fx-background-insets: 0; 
+}
+
+.sidebarOptions > .title > *.text {
+    -fx-fill: #ffffff;
+}
+
+.sidebarOptions > .content {
+    -fx-background-color: transparent;
+    -fx-border-color: #222428;
+}
+
+.labelOptions{
+    -fx-text-fill: #ffffff;
+}
+
+.labelOptions:hover{
+    -fx-background-color: #18181D;
+}
+
+.sidebarOptions:hover > .title {  
+    -fx-background-color: #18181D;
+    -fx-background-insets: 0; 
+}
+
